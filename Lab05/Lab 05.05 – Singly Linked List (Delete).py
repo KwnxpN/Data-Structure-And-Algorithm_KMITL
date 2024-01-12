@@ -88,6 +88,7 @@ class SinglyLinkedList:
                 print("Cannot delete,", data, "does not exist.")
             else:
                 start.set_next(start.get_next().get_next())
+                self.count -= 1
 
 def main():
     """main here"""
