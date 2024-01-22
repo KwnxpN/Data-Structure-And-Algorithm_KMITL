@@ -53,7 +53,7 @@ class BST:
                         break
                     else:
                         pointer = pointer.get_left()
-                elif data > pointer.get_data():
+                elif data >= pointer.get_data():
                     if pointer.get_right() is None:
                         p_new = BSTNode()
                         p_new.set_data(data)
