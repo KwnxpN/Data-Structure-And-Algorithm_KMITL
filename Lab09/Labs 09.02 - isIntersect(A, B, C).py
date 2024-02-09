@@ -11,5 +11,6 @@ def is_intersect(list_a, list_b, list_c):
                 for num_c in list_c:
                     if num_c == num_b:
                         res = True
+                        break
     print(res)
 is_intersect(str(input()), str(input()), str(input()))
