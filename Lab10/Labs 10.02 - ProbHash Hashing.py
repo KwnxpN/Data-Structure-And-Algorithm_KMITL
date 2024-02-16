@@ -6,27 +6,27 @@ class Student:
 
     def __init__(self, std_id, name, gpa):
         """init"""
-        self.std_id = std_id
-        self.name = name
-        self.gpa = gpa
+        self.__std_id = std_id
+        self.__name = name
+        self.__gpa = gpa
 
     def get_std_id(self):
         """get id"""
-        return self.std_id
+        return self.__std_id
 
     def get_name(self):
         """get name"""
-        return self.name
+        return self.__name
 
     def get_gpa(self):
         """get gpa"""
-        return self.gpa
+        return self.__gpa
 
-    def print_details(self):
+    def print_detail(self):
         """p detail"""
-        print("ID: " + str(self.std_id))
-        print("Name: " + self.name)
-        print("GPA: %.2f" % self.gpa)
+        print("ID: {}".format(self.get_std_id()))
+        print("Name: {}".format(self.get_name()))
+        print("GPA: {}".format(self.get_gpa()))
 
 
 class ProbHash:
