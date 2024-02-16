@@ -85,7 +85,7 @@ def main():
             print("------")
             student = hashtable.search_data(int(data))
             if student is not None:
-                student.print_details()
+                student.print_detail()
             print("------")
         else:
             print("Invalid Condition!")
