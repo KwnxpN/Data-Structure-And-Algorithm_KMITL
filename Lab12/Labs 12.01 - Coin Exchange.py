@@ -25,6 +25,7 @@ def coin_exchange(amount, data):
             coin_used += coin_count
 
     if remaining_amount > 0:
+        print("Amount:", amount)
         print("Coins are not enough.")
     else:
         print("Amount:", amount)
